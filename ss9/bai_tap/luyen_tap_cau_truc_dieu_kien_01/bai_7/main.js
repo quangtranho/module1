@@ -6,6 +6,6 @@ function tinh() {
     let thgngoaimang = document.getElementById("thgngoaimang").value;
     let phibosung = document.getElementById("phibosung").value;
     let result;
-    result = "Result :"+(parseInt(codinh)+(parseInt(noimang)*parseInt(thgnoimang))+(parseInt(ngoaimang)*parseInt(thgngoaimang))+parseInt(phibosung));
+    result = "Result :" + (parseInt(codinh) + (parseInt(noimang) * parseInt(thgnoimang)) + (parseInt(ngoaimang) * parseInt(thgngoaimang)) + parseInt(phibosung));
     document.getElementById("result").innerHTML = result;
 }
