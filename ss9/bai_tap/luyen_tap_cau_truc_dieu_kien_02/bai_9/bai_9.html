@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+a:
+<input type="text" id="a">
+<br>
+b:
+<input type="text" id="b">
+<br>
+c:
+<input type="text" id="c">
+<br>
+<button onclick="kiemtra()">Kiểm tra</button>
+<br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function kiemtra() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let result;
+        if (a, b, c > 0) {
+            if (a + b > c || b + c > a || a + c > b) {
+                result = "Là các cạnh của một tam giác";
+            } else {
+                result = "Không phải là các cạnh của một tam giác";
+            }
+        } else {
+            result = "Không phải là các cạnh của một tam giác";
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>

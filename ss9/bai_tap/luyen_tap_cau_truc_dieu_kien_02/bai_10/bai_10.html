@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Kwh:
+<input type="text"id="kwh">
+<br>
+<button onclick="tinh()">Tính</button>
+<br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+  function tinh() {
+    let kwh = document.getElementById("kwh").value;
+    let result;
+    if (kwh <= 50) {
+      result = kwh * 1678;
+    } else if (kwh <= 100) {
+      result = 50 * 1678 + (kwh - 50) * 1734;
+    } else if (kwh <= 200) {
+      result = 50 * 1678 + 50 * 1734 + (kwh - 100) * 2014;
+    } else if (kwh <= 300) {
+      result = 50 * 1678 + 50 * 1734 + 100 * 2014 + (kwh - 200) * 2536;
+    } else if (kwh <= 400) {
+      result = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (kwh - 300) * 2834;
+    } else {
+      result = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (kwh - 400) * 2927;
+    }
+    document.getElementById("result").innerHTML=result;
+  }
+</script>

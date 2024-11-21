@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập tuổi :
+<input type="text" id="tuoi">
+<br>
+<button onclick="kiemtra()">Kiểm Tra</button>
+<br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function kiemtra() {
+        let tuoi = document.getElementById("tuoi").value;
+        let result;
+        if (tuoi > 0 && tuoi < 120) {
+            result = "Khai đúng tuổi";
+        } else {
+            result = "Khai sai tuổi";
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
