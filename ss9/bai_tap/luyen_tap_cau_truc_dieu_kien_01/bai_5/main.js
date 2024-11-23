@@ -5,7 +5,7 @@ function tinh() {
     let result;
     result = (bt + (2 * gk) + (3 * ck)) / 5;
 
-    if (result > 0) {
+
         if (result > 8.0) {
             result = 'Xếp loại giỏi';
             document.getElementById("result").innerHTML = result;
@@ -22,6 +22,5 @@ function tinh() {
             result = 'Xếp loại kém';
             document.getElementById("result").innerHTML = result;
         }
-    } else
-        document.getElementById("result").innerHTML = result;
+
 }

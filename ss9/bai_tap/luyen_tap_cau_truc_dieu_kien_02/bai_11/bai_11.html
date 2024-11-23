@@ -17,7 +17,7 @@ Các khoản giảm trừ :
 </body>
 </html>
 <script>
-    function tinh(){
+    function tinh() {
         let tongthunhap = parseFloat(document.getElementById("tongthunhap").value);
         let giamtru = parseFloat(document.getElementById("giamtru").value);
         let thunhaptinhthue = parseFloat(tongthunhap - giamtru);
@@ -37,6 +37,6 @@ Các khoản giảm trừ :
         } else {
             result = 5000000 * 0.05 + 5000000 * 0.1 + 8000000 * 0.15 + 14000000 * 0.2 + 20000000 * 0.25 + 28000000 * 0.3 + (thunhaptinhthue - 80000000) * 0.35;
         }
-        document.getElementById("result").innerHTML=result;
+        document.getElementById("result").innerHTML = result;
     }
 </script>
