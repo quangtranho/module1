@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số nguyên dương
+<input type="text" id="so"><br>
+<button onclick="tinhgiaithua()">Đổi</button>
+<p id="ketqua"></p>
+<script>
+  function tinhgiaithua() {
+    let tich = 1
+    let so = document.getElementById("so").value;
+    for (i=2;i<=so;i++){
+      tich = tich*i;
+    }
+    document.getElementById("ketqua").innerHTML=tich;
+  }
+</script>
+</body>
+</html>

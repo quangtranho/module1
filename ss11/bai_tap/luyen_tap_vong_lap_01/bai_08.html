@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
 </head>
 <body>
+<button onclick="doan()" id="Chơi">Chơi</button>
+<script>
+    function doan() {
+        let khoang = prompt("Nhập vào khoảng muốn đoán");
+        let soDoan = Math.floor(Math.random() * khoang);
+        console.log(soDoan);
+        let soBandoan=prompt("Nhập vào số bạn đoán");
+        let count =1;
+        while (soDoan!=soBandoan){
 
+            if (count == 3){
+                alert("Bạn đã hết lần đoán");
+                document.write("<button onclick=\"doan()\">Chơi lại</button>")
+                break;
+            }else if (soBandoan>soDoan){
+                alert("Số bạn đoán lớn hơn số đoán");
+            }else if (soBandoan<soDoan){
+                alert("Số bạn đoán nhỏ hơn số đoán");
+            }
+            soBandoan = prompt("Nhập số bạn đoán");
+            count++;
+        }
+        if (soDoan==soBandoan){
+            alert("Bạn đã đoán đúng.Chúc mừng bạn");
+        }
+
+    }
+</script>
 </body>
 </html>
