@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="bandau" placeholder="Số tiền ban đầu">
+<br>
+<input type="text" id="lai" placeholder="Lãi">
+<br>
+<input type="text" id="thang" placeholder="Số tháng">
+<br>
+<button onclick="tinh()">Tính</button>
+<br>
+<p id="result"></p>
+<script>
+    function tinh() {
+        let bandau = parseFloat(document.getElementById("bandau").value);
+        let lai = parseFloat(document.getElementById("lai").value);
+        let thang = parseFloat(document.getElementById("thang").value);
+        let result;
+        result = parseFloat(bandau * Math.pow(1 + parseFloat(lai / 100), thang));
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
