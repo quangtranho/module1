@@ -6,38 +6,38 @@
 </head>
 <body>
 <script>
-  for (let i = 3; i <= 9; i += 2) {
-    for (let j = 9; j > i; j -= 2) {
-      document.write("&nbsp;&nbsp;");
+    for (let i = 3; i <= 9; i += 2) {
+        for (let j = 9; j > i; j -= 2) {
+            document.write("&nbsp;&nbsp;");
+        }
+        for (let k = 1; k <= i; k++) {
+            document.write("*");
+        }
+        for (let j = 9; j > i; j -= 2) {
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+        for (let k = 1; k <= i; k++) {
+            document.write("*");
+        }
+        document.write("<br/>");
     }
-    for (let k = 1; k <= i; k++) {
-      document.write("*");
+    for (let i = 16; i >= 1; i -= 2) {
+        for (let j = 16; j >= i; j -= 2) {
+            document.write("&nbsp;&nbsp;");
+        }
+        for (let k = 1; k <= i; k++) {
+            document.write("*");
+        }
+        document.write("<br/>");
     }
-    for (let j = 9; j > i; j -= 2) {
-      document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
-    }
-    for (let k = 1; k <= i; k++) {
-      document.write("*");
-    }
-    document.write("<br/>");
-  }
-  for (let i = 16; i >= 1; i -= 2) {
-    for (let j = 16; j >= i; j -= 2) {
-      document.write("&nbsp;&nbsp;");
-    }
-    for (let k = 1; k <= i; k++) {
-      document.write("*");
-    }
-    document.write("<br/>");
-  }
 
-  for (let i = 1; i <= 18; i++) {
-    if (i === 18) {
-      document.write("*");
-    } else {
-      document.write("&nbsp;");
+    for (let i = 1; i <= 18; i++) {
+        if (i === 18) {
+            document.write("*");
+        } else {
+            document.write("&nbsp;");
+        }
     }
-  }
 </script>
 </body>
 </html>

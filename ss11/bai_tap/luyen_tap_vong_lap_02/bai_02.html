@@ -10,14 +10,14 @@ Nhập số nguyên dương
 <button onclick="tinhgiaithua()">Đổi</button>
 <p id="ketqua"></p>
 <script>
-  function tinhgiaithua() {
-    let tich = 1
-    let so = document.getElementById("so").value;
-    for (i=2;i<=so;i++){
-      tich = tich*i;
+    function tinhgiaithua() {
+        let tich = 1
+        let so = document.getElementById("so").value;
+        for (i = 2; i <= so; i++) {
+            tich = tich * i;
+        }
+        document.getElementById("ketqua").innerHTML = tich;
     }
-    document.getElementById("ketqua").innerHTML=tich;
-  }
 </script>
 </body>
 </html>
