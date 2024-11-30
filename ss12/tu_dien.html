@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="chu" placeholder="Nhập tiếng anh">
+<button onclick="dich()">Dịch</button>
+<br>
+<p id="result"></p>
+</body>
+</html>
+<script>
+
+    function dich() {
+        let chu = document.getElementById("chu").value;
+        let eng = ["banana", "apple", "orange", "pen", "pencil", "book"];
+        let vn = ["chuối", "táo", "cam", "bút", "bút chì", "sách"];
+        let result;
+        for (let i = 0; i < eng.length; i++) {
+            if (chu.indexOf(eng[i]) != -1) {
+                result = vn[i];
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+
+</script>

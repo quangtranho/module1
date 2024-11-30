@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let songuyen = [];
+    let max;
+    let index;
+    for (let i = 0; i < 5; i++) {
+        let num = parseInt(prompt("Nhập số nguyên thứ " + (i + 1)));
+        if (songuyen.includes(num)) {
+            alert("Số đã tồn tại, vui lòng nhập số khác!");
+            i--;
+        } else {
+            songuyen.push(num);
+        }
+
+
+        let max = Math.max(...songuyen);
+        let index = [];
+        for (let i = 0; i < songuyen.length; i++) {
+            if (songuyen[i] === max) {
+                index.push(i);
+            }
+        }
+        console.log("Giá trị lớn nhất:", max);
+        console.log("Vị trí của giá trị lớn nhất:", index.map(i => i + 1));
+    }
+</script>
+</body>
+</html>
