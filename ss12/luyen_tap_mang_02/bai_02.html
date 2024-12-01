@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let mangdaonguoc = [];
+    let n = prompt("Nhập số phần tử bạn muốn nhập ")
+    for (let i = 0; i < n; i++) {
+        mang[i] = prompt("Nhập số nguyên thứ " + (i + 1));
+    }
+    for (let j = n; j >= 0; j--) {
+        mangdaonguoc.push(mang[j]);
+    }
+    alert(mangdaonguoc.join(""))
+
+</script>
+</body>
+</html>

@@ -7,15 +7,15 @@
 <body>
 <script>
     let n = prompt("Bạn muốn nhập bao nhiêu số nguyên :");
-    let sum=0;
-    let songuyen=[];
-    for (let i = 0;i<n;i++){
-        songuyen[i] = parseFloat(prompt("Nhập số nguyên thứ "+(i+1)));
-        sum=sum+songuyen[i];
+    let sum = 0;
+    let songuyen = [];
+    for (let i = 0; i < n; i++) {
+        songuyen[i] = parseFloat(prompt("Nhập số nguyên thứ " + (i + 1)));
+        sum = sum + songuyen[i];
     }
-    let aver = sum/n;
+    let aver = sum / n;
     let max = Math.max(...songuyen);
-    alert("Số lớn nhất trong mảng là "+max+" trung bình các phần tử trong mảng là "+aver.toFixed(2))
+    alert("Số lớn nhất trong mảng là " + max + " trung bình các phần tử trong mảng là " + aver.toFixed(2))
 </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    let n = 10;
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt("Nhập số nguyên mảng 1 thứ " + [i + 1]);
+    }
+    for (let j = 0; j < n; j++) {
+        b[j] = prompt("Nhập số nguyên mảng 2 thứ " + [j + 1]);
+    }
+    c = a.concat(b);
+    alert("Mảng " + c.join(","));
+</script>
+</body>
+</html>

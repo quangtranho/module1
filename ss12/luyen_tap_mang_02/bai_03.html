@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let mangkytu=[];
+  let chu=["!","@","#","$","%","^","&","*","(",")","-","=","_","+"];
+    let n = prompt("Nhập số lượng ký tự ");
+    let count = 0;
+  for (let i = 0 ;i<n;i++){
+    mangkytu[i]=prompt("Nhập ký tự thứ "+(i+1));
+    if (chu.indexOf(mangkytu[i])!=-1){
+        count ++;
+    }
+
+  }
+  alert("Số ký tự trong mảng là "+count);
+</script>
+</body>
+</html>

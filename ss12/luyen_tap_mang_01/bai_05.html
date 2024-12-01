@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let songuyen = [];
+    let soam = [];
+    let count = 0;
+    let n = prompt('Bạn muốn nhập vào bao nhiêu mảng');
+    for (let i = 0; i < n; i++) {
+        songuyen[i] = prompt("Nhập số nguyên thứ " + (i + 1));
+        if (songuyen[i] < 0) {
+            soam.push(songuyen[i]);
+            count++;
+        }
+    }
+    alert("Các số nguyên âm là " + soam.join(" ") + " Có " + count + " số nguyên âm");
+</script>
+</body>
+</html>

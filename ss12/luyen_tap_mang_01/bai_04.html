@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let songuyen = [];
+    let n = prompt('Bạn muốn nhập vào bao nhiêu mảng');
+    for (let i = 0; i < n; i++) {
+        songuyen[i] = prompt("Nhập số nguyên thứ " + (i + 1));
+    }
+    let daonguoc = [];
+    for (let j = songuyen.length - 1; j >= 0; j--) {
+        daonguoc.push(songuyen[j]);
+    }
+    alert("Mảng 1 " + songuyen.join(" ") + " Mảng đảo ngược " + daonguoc.join(" "))
+</script>
+</body>
+</html>

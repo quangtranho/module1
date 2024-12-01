@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let songuyen = [];
+    let soV;
+    let n = 10;
+    for (let i = 0; i < n; i++) {
+        songuyen[i] = prompt("Nhập số nguyên thứ " + (i + 1));
+    }
+    let mang1=songuyen.join(",");
+    soV = prompt("Nhập số V ");
+        if (songuyen.indexOf(soV) != -1) {
+            for (let i = songuyen.indexOf(soV); i < n; i++) {
+                songuyen[i]=songuyen[i+1];
+            }
+            songuyen[n-1]=0;
+
+        }
+    let mang2 = songuyen.join(',');
+    alert("Mảng 1 "+mang1+" Mảng 2 "+mang2);
+</script>
+</body>
+</html>

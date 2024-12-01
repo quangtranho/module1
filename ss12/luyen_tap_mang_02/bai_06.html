@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let mangkytu=[];
+  let n = prompt("Nhập số ký tự bạn muốn nhập ");
+  let kytu = "-";
+  for (i=0;i<n;i++){
+    mangkytu[i]=prompt("Nhập ký tự thứ "+(i+1));
+    if (kytu.indexOf(mangkytu[i])!=-1){
+        mangkytu[i]="_"
+    }
+  }
+  alert(mangkytu.join(""));
+</script>
+</body>
+</html>
