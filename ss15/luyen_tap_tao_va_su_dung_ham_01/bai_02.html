@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="chuoi" placeholder="Nhập">
+<input type="number" id="chuoi" placeholder="Nhập">
 <br>
 <button onclick="alertMessage()">Hiển thị</button>
 </body>
@@ -13,6 +13,7 @@
 <script>
     function alertMessage() {
         let chuoi = document.getElementById("chuoi").value;
+        chuoi++;
         alert(chuoi);
     }
 </script>
