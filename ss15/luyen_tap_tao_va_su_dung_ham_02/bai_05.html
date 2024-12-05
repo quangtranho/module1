@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let songuyen = [];
+    for (i = 0; i < 3; i++) {
+        songuyen[i] = prompt("Nhập số nguyên thứ " + (i + 1) + " là ");
+    };
+    sosanh(songuyen)
+    function sosanh(a) {
+        let min = Math.min(...a);
+        alert("Số nhỏ nhất là " + min);
+    }
+</script>
+</body>
+</html>

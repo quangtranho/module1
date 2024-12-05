@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let r = parseFloat(prompt("Nhập bán kính "));
+    hinhtron(r);
+
+    function hinhtron(bankinh) {
+        let dientich;
+        let chuvi;
+        dientich = parseFloat(Math.PI * Math.pow(bankinh, 2));
+        chuvi = parseFloat(2 * Math.PI * bankinh);
+        alert("Diện tích : " + dientich + " Chu vi : " + chuvi);
+
+    }
+</script>
+</body>
+</html>
