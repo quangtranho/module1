@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt("Nhập một số ");
+    kiemtra(nhap);
+    function kiemtra(a){
+        if (a<0){
+            alert(false);
+        }else if(a>=0) {
+            alert(true);
+        }else if (isNaN(a)){
+            alert("Nhập số nguyên");
+        }
+    }
+</script>
+</body>
+</html>

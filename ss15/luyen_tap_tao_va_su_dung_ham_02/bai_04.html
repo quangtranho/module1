@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kytu = prompt("Nhập ");
+    check(kytu);
+    function check(number) {
+        for (let i =0;i<number.length;i++){
+            let check =! isNaN(number[i]);
+            console.log(check);
+           if (check==true){
+               alert(true);
+           }else {
+               alert(false);
+           }
+        }
+
+    }
+</script>
+</body>
+</html>
