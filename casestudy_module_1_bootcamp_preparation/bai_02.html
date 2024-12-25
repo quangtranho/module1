@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập cạnh góc vuông thứ 1"));
+    let b = parseFloat(prompt("Nhập cạnh góc vuông thứ 2"));
+    let c = parseFloat(prompt("Nhập cạnh huyền "));
+    checkTriagle(a, b, c);
+
+    function checkTriagle(x, y, z) {
+        let n = Math.pow(x,2)+Math.pow(y,2);
+        console.log(n);
+        if (x + y > z){
+            if (n==Math.pow(z,2)){
+                console.log(Math.pow(z,2))
+                alert("Là 3 cạnh của tam giác vuông");
+            }else {
+                alert("Chỉ là 3 cạnh của tam giác");
+            }
+        }else {
+            alert("Không phải là cạnh của 1 tam giác");
+        }
+    }
+</script>
+</body>
+</html>

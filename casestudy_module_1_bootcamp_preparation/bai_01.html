@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 20;
+    let mang = [];
+    let count = 1;
+    for (i = 0; i < n; i++) {
+        mang[i] = prompt(`Nhập số nguyên thứ ${i + 1}`);
+    }
+    alert(mang.join(","));
+    for (j = 0; j < n; j++) {
+        if (mang[j] < mang[j + 1]) {
+            count++;
+        }
+    }
+    if (count == n) {
+        alert("True");
+    } else {
+        alert("False");
+    }
+
+
+</script>
+</body>
+</html>
